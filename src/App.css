@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #root {
@@ -16,26 +17,9 @@
 
 .previsioni-container{
   width: 100%;
-  height: 12.5rem;
+  height: 8rem;
   border-radius: 1.75rem;
-  background-color: brown;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .swiper-button-next,

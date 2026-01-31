@@ -30,7 +30,7 @@ function App() {
         }
 
         const fullData = await response.json();
-        //console.log(fullData)
+        console.log(fullData)
         
         const organized = {
           city: fullData.city.name, // città
@@ -85,11 +85,11 @@ function App() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <NextOursMeteo />
+          <NextOursMeteo data={infoMeteo.hourly} />
         </SwiperSlide>
 
         <SwiperSlide>
-          <NextDaysMeteo />
+          <NextDaysMeteo data={infoMeteo.daily} />
         </SwiperSlide>
 
       </Swiper>

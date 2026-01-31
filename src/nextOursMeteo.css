@@ -1,0 +1,31 @@
+.hours-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1 0.5rem;
+    background: linear-gradient(to right, #87ceeb 40%, #ffffff 100%);
+    height: 100%;
+}
+
+.hour-item{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hour-item .temp{
+    font: 0.8rem;
+    font-weight: 600;
+}
+
+.hour-item .hour{
+    font-weight: 500;
+}
+
+.hour-meteo-icon svg{
+    width: 2rem;
+    height: 2rem;
+    color: darkgray;
+}

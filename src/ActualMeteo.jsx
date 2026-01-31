@@ -1,4 +1,5 @@
 import './actualMeteo.css'
+import { getWeatherIcon } from './NewSetIcon';
 
 export default function ActualMeteo ({data, city, country }){
 
@@ -13,10 +14,13 @@ export default function ActualMeteo ({data, city, country }){
     return(
         <div className="actual-meteo-container">
             <div className="temp-city-actual-info">
-                <h2>{temp}°</h2>
+                <h2>{temp}<sup>°</sup></h2>
                 <p>{city}, {country}</p>
             </div>
-            <img src={iconUrl} alt={description} className="img-actual-meteo" />
+            <div className="img-actual-meteo">
+                {getWeatherIcon(iconCode, "16rem")}
+            </div>
+            
         </div>
     )
 }
