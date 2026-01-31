@@ -1,4 +1,4 @@
-.hours-container{
+.days-container{
     display: flex;
     gap: 1.8rem;
     justify-content: center;
@@ -9,23 +9,23 @@
     height: 100%;
 }
 
-.hour-item{
+.day-item{
     height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.hour-item .temp{
+.day-item .temp{
     font: 0.8rem;
     font-weight: 600;
 }
 
-.hour-item .hour{
+.day-item .day{
     font-weight: 600;
 }
 
-.hour-meteo-icon svg{
+.day-meteo-icon svg{
     width: 3rem;
     height: 3rem;
     color: darkgray;
