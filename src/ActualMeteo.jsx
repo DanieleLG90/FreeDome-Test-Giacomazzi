@@ -1,15 +1,15 @@
 import './actualMeteo.css'
 import { getWeatherIcon } from './NewSetIcon';
 
+//Components per la visualizzazione di temperatura, luogo e meteo in tempo reale
+
 export default function ActualMeteo ({data, city, country }){
 
     if (!data) return null;
 
-    const temp = Math.round(data.main.temp)
-    const description = data.weather[0].description
-    const iconCode = data.weather[0].icon
-
-    const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@4x.png`
+    const temp = Math.round(data.main.temp)// temperatura
+    const description = data.weather[0].description // descrizione clima
+    const iconCode = data.weather[0].icon // codice icona
 
     return(
         <div className="actual-meteo-container">

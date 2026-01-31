@@ -1,6 +1,8 @@
 import './nextDaysMeteo.css'
 import { getWeatherIcon } from './NewSetIcon.jsx';
 
+//Componentnt per la visualizzazione del meteo nei prossimi 5 giorni
+
 export default function NextDaysMeteo ({ data }){
    if (!data || data.length === 0) return null
 
@@ -9,9 +11,9 @@ export default function NextDaysMeteo ({ data }){
             {data.map((item, index) =>{
 
                 const date = new Date(item.dt_txt)
-                const dayName = date.toLocaleDateString('en-US', { weekday: 'short' }).replace('.', '')
-                const temp = Math.round(item.main.temp)
-                const iconCode = item.weather[0].icon
+                const dayName = date.toLocaleDateString('en-US', { weekday: 'short' }).replace('.', '') //abbreviazione giorni settimana
+                const temp = Math.round(item.main.temp) // temperatura
+                const iconCode = item.weather[0].icon // codice icona
 
                 return(
                     <div key={index} className="day-item">

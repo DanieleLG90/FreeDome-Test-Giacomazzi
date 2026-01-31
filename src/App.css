@@ -9,7 +9,7 @@
   width: 100vw;
   height: 100vh;
   text-align: center;
-  background-color: bisque;
+  background-color: #FDFBF7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,12 @@
   width: 99%;
   height: 8rem;
   border-radius: 1.75rem;
-  
+}
+
+@media (min-width: 768px){
+  .previsioni-container{
+    width: 450px;
+  }
 }
 
 .swiper{
